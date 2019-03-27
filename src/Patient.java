@@ -9,6 +9,15 @@ public class Patient implements Comparable<Patient> {
     String sympoms = "";
     String eCode = "";
 
+    Patient(){
+    }
+
+    Patient(String name, String symptoms, String eCode){
+        setName(name);
+        setSympoms(symptoms);
+        seteCode(eCode);
+    }
+
     /**
      * Compares patients priority
      * @param patient
@@ -17,9 +26,9 @@ public class Patient implements Comparable<Patient> {
     @Override
     public int compareTo(Patient patient){
         if (this.eCode.compareTo(patient.geteCode()) < 0){
-            return (1);
-        } else if (this.eCode.compareTo(patient.geteCode()) > 0){
             return (-1);
+        } else if (this.eCode.compareTo(patient.geteCode()) > 0){
+            return (1);
         } else if (this.eCode.compareTo(patient.geteCode()) == 0){
             return 0;
         }
