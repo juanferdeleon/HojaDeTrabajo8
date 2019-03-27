@@ -1,3 +1,4 @@
+import java.security.PublicKey;
 import java.util.Vector;
 
 /**
@@ -114,6 +115,22 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
                 return;
             }
         }
+    }
+
+    /**
+     * Returns first element
+     * @return
+     */
+    public E getFirst(){
+        return data.firstElement();
+    }
+
+    /**
+     * Size of the Heap
+     * @return
+     */
+    public int size(){
+        return data.size();
     }
 
     /**

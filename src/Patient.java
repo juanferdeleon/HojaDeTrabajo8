@@ -89,9 +89,9 @@ public class Patient implements Comparable<Patient> {
      */
     public String toString(){
         return "\nPatient:\n" +
-                "Name: " + getName() +
-                "Symptoms: " + getSympoms() +
-                "Emergency Code: " + geteCode();
+                "\nName: " + getName() +
+                "\nSymptoms: " + getSympoms() +
+                "\nEmergency Code: " + geteCode();
     }
 
 }

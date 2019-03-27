@@ -26,7 +26,7 @@ public interface PriorityQueue<E extends Comparable<E>> {
      * Returns true iff no elements are in queue
      * @return
      */
-    public boolean isEmpty();
+    //public boolean isEmpty();
 
     /**
      * Returns number of elements within queue
@@ -37,6 +37,6 @@ public interface PriorityQueue<E extends Comparable<E>> {
     /**
      * Removes all elements from queue
      */
-    public void clear();
+    //public void clear();
 
 }
