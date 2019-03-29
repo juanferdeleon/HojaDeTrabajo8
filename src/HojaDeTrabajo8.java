@@ -18,7 +18,7 @@ public class HojaDeTrabajo8{
         String path = input.next();
         Vector patients = readPatients(path);
 
-        VectorHeap vectorHeapPatients = new VectorHeap(patients);
+        PriorityQueue priorityQueue = new VectorHeap(patients);
 
         boolean wantsToContinue = true;
 
@@ -31,8 +31,8 @@ public class HojaDeTrabajo8{
 
             switch (op){
                 case "1":
-                    if (vectorHeapPatients.size() > 0){
-                        System.out.println(vectorHeapPatients.remove());
+                    if (priorityQueue.size() > 0){
+                        System.out.println(priorityQueue.remove());
                     } else {
                         System.out.println("\nERROR: No hay pacientes por atender.");
                     }
@@ -49,6 +49,10 @@ public class HojaDeTrabajo8{
 
     }
 
+    /**
+     * Main Menu String
+     * @return
+     */
     public static String mainMenu(){
         return "\n\tMenu" +
                 "\n1. Siguiente paciente" +
@@ -83,7 +87,6 @@ public class HojaDeTrabajo8{
 
         }
 
-        System.out.println(patients);
         return patients;
     }
 }
