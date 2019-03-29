@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"HojaDeTrabajo8"},{"p":"<Unnamed>","l":"Patient"},{"p":"<Unnamed>","l":"PriorityQueue"},{"p":"<Unnamed>","l":"VectorHeap"},{"p":"<Unnamed>","l":"VectorHeapTest"}]
